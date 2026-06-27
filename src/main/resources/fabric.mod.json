@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "sapphiremod",
+	"version": "${version}",
+	"name": "Sapphire Mod",
+	"description": "A simple mod adding sapphires to minecraft.",
+	"authors": [
+		"CaptnBash"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/sapphiremod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"sapphiremod.SapphireMod"
+		],
+		"client": [
+			"sapphiremod.SapphireModClient"
+		],
+		"fabric-datagen": [
+			"sapphiremod.SapphireModDataGenerator"
+		]
+	},
+	"mixins": [
+		"sapphiremod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
